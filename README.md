@@ -261,4 +261,5 @@ I first got the idea for starting this project by visiting the [Github does dotf
 
 Thanks to [@subnixr](https://github.com/subnixr) for [his awesome Zsh theme](https://github.com/subnixr/minimal)! And lastly, I'd like to thank [Emma Fabre](https://twitter.com/anahkiasen) for [her excellent presentation on Homebrew](https://speakerdeck.com/anahkiasen/a-storm-homebrewin) which made me migrate a lot to a [`Brewfile`](./Brewfile) and [Mackup](https://github.com/lra/mackup).
 
-In general, I'd like to thank every single one who open-sources their dotfiles for their effort to contribute something to the open-source community. Your work means the world! :earth_africa: :heart:
+
+Many scripts and configurations have been inspired by or outright stolen from my colleagues at thoughtbot. Of special note, I've stolen many things from Chris Toomey, Gordon Fontenot, and Teo Ljungberg, among others that I'm sure I'm forgetting. In general, I'd like to thank every single one who open-sources their dotfiles for their effort to contribute something to the open-source community. Your work means the world! :earth_africa: :heart:
