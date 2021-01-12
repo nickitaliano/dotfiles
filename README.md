@@ -127,9 +127,9 @@ See [here](https://support.apple.com/en-us/HT204837) for detailed instructions.
 CLI:
 
 ```
-sudo fdesetup status
+sudo 
 
-sudo fdesetup enable
+sudo 
 ```
 
 
