@@ -1,67 +1,5 @@
 # Macbook Pro dotfiles using Mackup
 
-dotfiles
-my dotfiles
-
-This repository serves as my way to help me setup and maintain my Mac. It takes the effort out of installing everything manually. Everything needed to install my preferred setup of macOS is detailed in this readme. Feel free to explore, learn and copy parts for your own dotfiles. Enjoy! :smile:
-
-📖 Read the blog post: https://driesvints.com/blog/getting-started-with-dotfiles  
-📺 Watch the screencast on Laracasts: https://laracasts.com/series/guest-spotlight/episodes/1
-
-In addition to the files stored in this repository, the following instructions are needed to fully setup a Macbook Pro.
-
-### Backup
-
-Copy the following files in your home directory:
-
-* SSH Keys
-* GPG Keys
-* GitHub/GitLab Tokens in `.env`
-* Custom settings for OhMyZSH
-
-```
-cd backup/
-cp -r .ssh .gnupg .env .oh-my-zsh $HOME/
-```
-
-> **Note**:
->
-> The `dotenv` plugin is enabled in OhMyZSH which automatically
-> reads the `.env` tokens from the user's home directory.
-
-### Dot files
-
-```
-git clone https://gitlab.com/dnsmichi/dotfiles.git
-cd dotfiles
-```
-
-Sync the files.
-
-```
-./bootstrap.sh
-```
-
-Apply macOS settings.
-
-```
-./.macos
-```
-
-Install Homebrew and OhMyZSH.
-
-```
-./brew_once.sh
-```
-
-Install tools and applications with Homebrew bundle.
-
-```
-brew bundle
-```
-
-This makes use of the [Brewfile](Brewfile) definitions.
-
 
 ## A Fresh macOS Setup
 
@@ -141,16 +79,7 @@ VirtualBox needs work with Kernel modules. I highly recommend to get a [Parallel
 These are manual settings as they require user awareness.
 
 ### FileVault
-See [here](https://support.apple.com/en-us/HT204837) for detailed instructions.
-
-CLI:
-
-```
-sudo 
-
-sudo 
-```
-
+See [here](https://support.apple.com/en-us/HT204837) for detailed instruction
 
 ### Keyboard
 
@@ -257,9 +186,4 @@ Enjoy your own Dotfiles!
 
 I first got the idea for starting this project by visiting the [Github does dotfiles](https://dotfiles.github.io/) project. Both [Zach Holman](https://github.com/holman/dotfiles) and [Mathias Bynens](https://github.com/mathiasbynens/dotfiles) were great sources of inspiration. [Sourabh Bajaj](https://twitter.com/sb2nov/)'s [Mac OS X Setup Guide](http://sourabhbajaj.com/mac-setup/) proved to be invaluable. Dries's Dotfiles were edited for my base...
 
-
-
 Thanks to [@subnixr](https://github.com/subnixr) for [his awesome Zsh theme](https://github.com/subnixr/minimal)! And lastly, I'd like to thank [Emma Fabre](https://twitter.com/anahkiasen) for [her excellent presentation on Homebrew](https://speakerdeck.com/anahkiasen/a-storm-homebrewin) which made me migrate a lot to a [`Brewfile`](./Brewfile) and [Mackup](https://github.com/lra/mackup).
-
-
-Many scripts and configurations have been inspired by or outright stolen from my colleagues at thoughtbot. Of special note, I've stolen many things from Chris Toomey, Gordon Fontenot, and Teo Ljungberg, among others that I'm sure I'm forgetting. In general, I'd like to thank every single one who open-sources their dotfiles for their effort to contribute something to the open-source community. Your work means the world! :earth_africa: :heart:
