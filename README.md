@@ -1,6 +1,5 @@
 # Macbook Pro dotfiles using Mackup
 
-
 ## A Fresh macOS Setup
 
 These instructions are for when you've already set up your dotfiles. If you want to get started with your own dotfiles you can [find instructions below](#your-own-dotfiles).
@@ -22,6 +21,42 @@ After going to our checklist above and making sure you backed everything up, we'
 ### Setting up your Mac
 
 ## Preparations
+
+### "." + file = dotfiles
+
+Nick Italiano's dotfiles for Zsh, python, git, and more.
+
+They assume you're using OSX.
+
+Questions? Comments? Open an issue or tweet [@nickitalian0](https://twitter.com/nickitalian0).
+
+### Installation
+
+    $ git clone git@github.com:nickitaliano/dotfiles.git ~/.dotfiles
+    $ cd ~/.dotfiles
+    $ ./install.sh
+
+It will install [rcm] and use that to safely symlink the dotfiles, prompting you
+if a file already exists (like if you already have `~/.zshrc`).
+
+[rcm]: http://thoughtbot.github.io/rcm/rcm.7.html
+
+### Organization
+
+`rcm` will symlink all files into place, keeping the folder structure relative
+to the tag root. However, non-configuration files and folders like `system/`,
+`Brewfile`, `README.md`, etc will not be linked because they are in the
+`EXCLUDES` section of the [`rcrc`](/rcrc) file.
+
+### Tags
+
+`rcm` has the concept of tags: items under `tag-git/` are in the `git` tag, and
+so on. I'm using it for organization.
+
+### Zsh
+
+All of the Zsh configuration is in [`zshrc`](/zshrc).
+
 ### iterm2
 
 Install it manually from the [website](https://www.iterm2.com/), start it and add it to the deck.
@@ -187,3 +222,14 @@ Enjoy your own Dotfiles!
 I first got the idea for starting this project by visiting the [Github does dotfiles](https://dotfiles.github.io/) project. Both [Zach Holman](https://github.com/holman/dotfiles) and [Mathias Bynens](https://github.com/mathiasbynens/dotfiles) were great sources of inspiration. [Sourabh Bajaj](https://twitter.com/sb2nov/)'s [Mac OS X Setup Guide](http://sourabhbajaj.com/mac-setup/) proved to be invaluable. Dries's Dotfiles were edited for my base...
 
 Thanks to [@subnixr](https://github.com/subnixr) for [his awesome Zsh theme](https://github.com/subnixr/minimal)! And lastly, I'd like to thank [Emma Fabre](https://twitter.com/anahkiasen) for [her excellent presentation on Homebrew](https://speakerdeck.com/anahkiasen/a-storm-homebrewin) which made me migrate a lot to a [`Brewfile`](./Brewfile) and [Mackup](https://github.com/lra/mackup).
+
+## Attribution
+
+Many scripts and configurations have been inspired by or outright stolen from
+my colleagues at thoughtbot. Of special note, I've stolen many things from
+[Chris Toomey], [Gordon Fontenot], and [Teo Ljungberg], among others that I'm
+sure I'm forgetting.
+
+[Chris Toomey]: https://github.com/christoomey/dotfiles
+[Gordon Fontenot]: https://github.com/gfontenot/dotfiles
+[Teo Ljungberg]: https://github.com/teoljungberg/dotfiles
