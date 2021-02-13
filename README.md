@@ -1,4 +1,4 @@
-# Macbook Pro dotfiles using Mackup
+# Macbook Pro Dotfiles Using Mackup
 
 ## A Fresh macOS Setup
 
