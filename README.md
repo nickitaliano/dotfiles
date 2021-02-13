@@ -22,7 +22,7 @@ After going to our checklist above and making sure you backed everything up, we'
 
 ### Preparations
 
-Nick Italiano's dotfiles for Zsh, python, git, and more.
+Nick Italiano's "." + "files" for Zsh, python, git, and more.
 
 They assume you're using OSX.
 
