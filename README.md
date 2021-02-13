@@ -213,21 +213,22 @@ mackup backup
 
 You can tweak the shell theme, the Oh My Zsh settings and much more. Go through the files in this repo and tweak everything to your liking.
 
-Enjoy your own Dotfiles!
+Enjoy your Dotfiles!
 
 ## Thanks To...
 
 I first got the idea for starting this project by visiting the [Github does dotfiles](https://dotfiles.github.io/) project. Both [Zach Holman](https://github.com/holman/dotfiles) and [Mathias Bynens](https://github.com/mathiasbynens/dotfiles) were great sources of inspiration. [Sourabh Bajaj](https://twitter.com/sb2nov/)'s [Mac OS X Setup Guide](http://sourabhbajaj.com/mac-setup/) proved to be invaluable. Dries's Dotfiles were edited for my base...
 
-Thanks to [@subnixr](https://github.com/subnixr) for [his awesome Zsh theme](https://github.com/subnixr/minimal)! And lastly, I'd like to thank [Emma Fabre](https://twitter.com/anahkiasen) for [her excellent presentation on Homebrew](https://speakerdeck.com/anahkiasen/a-storm-homebrewin) which made me migrate a lot to a [`Brewfile`](./Brewfile) and [Mackup](https://github.com/lra/mackup).
-
+<!--
+Thanks to [@subnixr](https://github.com/subnixr) for [his awesome Zsh theme](https://github.com/subnixr/minimal)!
+And lastly, I'd like to thank [Emma Fabre](https://twitter.com/anahkiasen) for [her excellent presentation on Homebrew](https://speakerdeck.com/anahkiasen/a-storm-homebrewin) which made me migrate a lot to a [`Brewfile`](./Brewfile) and [Mackup](https://github.com/lra/mackup).
+Acknowledgements 
 ## Attribution
-
 Many scripts and configurations have been inspired by or outright stolen from
 my colleagues at thoughtbot. Of special note, I've stolen many things from
 [Chris Toomey], [Gordon Fontenot], and [Teo Ljungberg], among others that I'm
 sure I'm forgetting.
-
 [Chris Toomey]: https://github.com/christoomey/dotfiles
 [Gordon Fontenot]: https://github.com/gfontenot/dotfiles
 [Teo Ljungberg]: https://github.com/teoljungberg/dotfiles
+-->
